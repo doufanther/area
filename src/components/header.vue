@@ -16,7 +16,7 @@
 //	},
   	methods:{
   		toBack(){
-  			this.$router.push({ name: 'SERVERPART'})
+  			this.$router.push({ name: 'part'})
   		}
   	},
   	created(){

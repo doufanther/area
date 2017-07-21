@@ -31,7 +31,7 @@
 		},
 		created(){
 			axios.get(this.url).then((res)=>{
-				console.log(res);
+				//console.log(res);
 				if(res.status===status){
 					this.serverpart=res.data.SERVERPARTObject;
 				}
@@ -43,7 +43,7 @@
 		methods:{
 			goshop(index){
 				let id=this.serverpart[index].SERVERPART_ID;
-				this.$router.push({ name: 'ServerPartShop',params: { userId: id } })
+				this.$router.push({ name: 'shop',params: { userId: id } })
 			}
 		},
 		components: {

@@ -9,7 +9,7 @@
 
 <script>
     import header from './components/header.vue'
- 		import serverpart from './components/serverpart.vue'
+ 		import part from './components/part.vue'
 		import axios from 'axios'
    
 		export default{
@@ -24,7 +24,7 @@
 			},
 			components:{
 			  	'v-header':header,
-			  	'server-part':serverpart
+			  	
 			}
 	  }
 </script>

@@ -40,7 +40,7 @@
 		created(){
 			this.count=this.$route.params.userId;
 			axios.get(this.url+this.count).then((res)=>{
-				console.log(res);
+				//console.log(res);
 				if(res.status===status){
 					this.Endaccount=res.data.EndaccountObject;
 				}

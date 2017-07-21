@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 import ElementUI from 'element-ui'
-import ServerPartShop from '../components/ServerPartShop.vue'
-import SERVERPART from '../components/SERVERPART'
-import Endaccount from '../components/Endaccount'
+import shop from '../components/shop.vue'
+import part from '../components/part'
+import count from '../components/count'
 import 'element-ui/lib/theme-default/index.css'
 
 Vue.use(Router);
@@ -18,18 +18,18 @@ export default new Router({
   routes: [
 		{
       path: '/',
-      name: 'SERVERPART',
-      component: SERVERPART
+      name: 'part',
+      component: part
     },
     {
-      path: '/ServerPartShop',
-      name: 'ServerPartShop',
-      component: ServerPartShop
+      path: '/shop',
+      name: 'shop',
+      component: shop
     },
     {
-      path: '/Endaccount',
-      name: 'Endaccount',
-      component: Endaccount
+      path: '/count',
+      name: 'count',
+      component:count
     }
   ]
 })

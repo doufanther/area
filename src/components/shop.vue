@@ -35,7 +35,7 @@
 		created(){
 			this.shop=this.$route.params.userId;
 			axios.get(this.url+this.shop).then((res)=>{
-				console.log(res);
+				//console.log(res);
 				if(res.status===status){
 					this.serverpartshop=res.data.ServerPartShopObject;
 				}
@@ -47,7 +47,7 @@
 		methods: {
 		   gocount(index){
 		   		let id=this.serverpartshop[index]. SERVERPARTSHOP_ID;
-				this.$router.push({ name: 'Endaccount',params: { userId: id } })
+				this.$router.push({ name: 'count',params: { userId: id } })
 		   }
 		}
 	}
